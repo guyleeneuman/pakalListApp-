@@ -80,7 +80,7 @@ button {
     position: absolute;
     top:-160px;
     right: px;
-    width: 79vh;
+    width: 60vh;
     height: 100vw;
     object-fit: contain;
     object-position: center;
@@ -198,7 +198,7 @@ button {
     width: 30%;
     height: 70%;
     position: absolute;
-    left: 0;
+    left: 20px;
     top: 10%;
     object-fit: cover;
     z-index: 2;
