@@ -80,7 +80,7 @@ button {
     position: absolute;
     top:-160px;
     right: px;
-    width: 60vh;
+    width: 55vh;
     height: 100vw;
     object-fit: contain;
     object-position: center;
@@ -195,7 +195,7 @@ button {
 }
 
 .topic-card img {
-    width: 30%;
+    width: 50%;
     height: 70%;
     position: absolute;
     left: 20px;
