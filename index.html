@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17251f">
+  <title>פק"ל חניכה לפק"ליסט</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- מסך פתיחה: החליפי את נתיבי התמונות בקבצים שלך -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <img class="site-logo" src="images/logo.png" alt="לוגו האתר">
+    <div class="hero-content">
+      <img class="site-title-image" src="images/title.png" alt="כותרת האתר">
+      <!-- <p class="site-subtitle">ברוך הבא לאפליקציית פק"ל חניכה, תוכל לקרוא באפליקצייה זו על הפק"לים השונים וללמוד עליהם. גלול למציאת הפק"ל הרצוי, לחץ עליו וקרא. בהצלחה!</p> -->
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- מסך הנושאים -->
+    <section id="topicsScreen" class="screen">
+      <div class="section-heading">
+        <div>
+          <!-- <span class="eyebrow">תוכן והעשרה</span> -->
+          <h1>בחרו פק"ל לקריאה עליו</h1>
+        </div>
+      </div>
+      <div id="topicsGrid" class="topics-grid"></div>
+    </section>
+
+    <!-- מסך קריאה -->
+    <section id="readerScreen" class="screen reader-screen hidden">
+      <div class="reader-topbar">
+        <button id="backButton" class="back-button"> חזרה לנושאים</button>
+        <span id="topicBreadcrumb" class="topic-breadcrumb"></span>
+      </div>
+
+      <article class="reader-card">
+        <div class="progress-track"><span id="progressBar"></span></div>
+        <div class="reader-page-info">
+          <span id="pageNumber"></span>
+          <span id="pageCount"></span>
+        </div>
+        <div id="pageContent" class="page-content"></div>
+        <div class="reader-controls">
+          <button id="prevButton" class="nav-button secondary">הקודם</button>
+          <div id="pageDots" class="page-dots"></div>
+          <button id="nextButton" class="nav-button primary">הבא </button>
+        </div>
+      </article>
+      <p class="swipe-instruction">אפשר לדפדף גם בהחלקה ימינה או שמאלה</p>
+    </section>
+  </main>
+
+  <!-- <footer>שם הארגון / היחידה שלך</footer> -->
+
+  <!-- חלונית הסבר ראשונית -->
+  <div id="welcomePopup" class="popup-backdrop">
+    <div class="welcome-popup" role="dialog" aria-modal="true" aria-labelledby="welcomeHeading">
+      <!-- <div class="popup-symbol">✦</div> -->
+      <span class="eyebrow">ברוך הבא לאפליקציית חניכה לפק"ליסט!</span>
+      <!-- <h2 id="welcomeHeading">ברוכים הבאים למרחב הלמידה</h2> -->
+      <p>
+        באפליקצייה זו תוכן לקרוא על סד"פים והסברים הקשורים לפק"לים השונים. 
+        גלול למציאת הפק"ל הרלוונטי עבורך, לחץ עליו והחל בקריאה!
+      </p>
+      <button id="closeWelcome" class="nav-button primary popup-button">הבנתי, אפשר להתחיל</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
