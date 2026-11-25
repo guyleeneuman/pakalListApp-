@@ -196,10 +196,10 @@ button {
 
 .topic-card img {
     width: 50%;
-    height: 70%;
+    height: 95%;
     position: absolute;
     left: 20px;
-    top: 10%;
+    top: 3%;
     object-fit: cover;
     z-index: 2;
     transition: transform 0.5s ease;
